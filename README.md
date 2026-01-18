@@ -24,16 +24,9 @@ v2.1 版本集成了 **PySide6 可视化界面** 和 **ddddocr / EasyOCR 自动�
 
 ## 🚀 快速开始
 
-### 方式一：使用安装包 (推荐普通用户)
+### 方式一：源码运行 (推荐)
 
-无需安装 Python 环境，下载即用。
-
-*   **MacOS**: 下载 release 中的 `.dmg` 文件，双击安装。
-    > **⚠️ 注意**: 由于安装包未内置浏览器内核（以减小体积），首次运行若报错 "Executable doesn't exist"，请在终端运行：
-    > `pip install playwright && playwright install chromium`
-*   **Windows**: 目前暂未提供预编译包，请参考下方的 **"方式二：源码运行"**，或在 Windows 环境下运行 `python build_win.py` 自行构建。
-
-### 方式二：源码运行 (推荐开发者)
+由于不同系统环境差异，推荐直接通过源码运行，方便配置和更新。
 
 #### 1. 环境准备
 
@@ -71,6 +64,18 @@ python scraper_list_only.py
 # 完整爬取 (含 PDF 下载)
 python scraper.py
 ```
+
+### 方式二：自行构建安装包
+
+如果您需要生成独立的可执行文件（.app / .exe / .dmg）分发给其他机器使用，可以使用项目内置的构建脚本。
+
+1.  **前提**: 确保已按照上述"源码运行"步骤安装好所有依赖环境。
+2.  **构建**:
+    *   **MacOS**: 运行 `python build_mac.py`，构建产物位于 `dist/` 目录 (包含 App 和 DMG)。
+    *   **Windows**: 运行 `python build_win.py`，构建产物位于 `dist/` 目录。
+3.  **注意**: 构建后的应用在首次运行时，如果提示找不到浏览器，请按照 FAQ Q4 处理。
+
+
 
 ---
 
