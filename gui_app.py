@@ -1,4 +1,8 @@
 import sys
+import os
+# 设置 Playwright 使用系统全局浏览器缓存 (避免打包后的路径错误)
+os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "0"
+
 import logging
 import time
 from pathlib import Path
