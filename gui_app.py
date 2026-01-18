@@ -97,7 +97,7 @@ class ScraperWorker(QThread):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("行业标准爬虫 GUI v2.1")
+        self.setWindowTitle("行业标准爬虫 GUI")
         self.resize(1100, 750)
         self.init_ui()
         self.init_logger()
