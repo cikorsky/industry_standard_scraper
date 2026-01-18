@@ -1,6 +1,6 @@
 # 行业标准信息爬虫 (Industry Standard Scraper) v2.1
 
-![GUI Screenshot](https://via.placeholder.com/800x500?text=App+Screenshot+Placeholder)
+![GUI Screenshot](assets/gui_screenshot.png)
 
 ## 📌 项目简介
 
@@ -27,7 +27,7 @@
 
 ### 1. 克隆项目
 ```bash
-git clone https://github.com/YOUR_USERNAME/industry_standard_scraper.git
+git clone https://github.com/cikorsky/industry_standard_scraper.git
 cd industry_standard_scraper
 ```
 
@@ -74,6 +74,15 @@ python gui_app.py
 所有爬取结果将保存在 `output/` 目录下：
 - **Excel 清单**: `output/standards.xlsx`
 - **PDF 文件**: `output/pdfs/`
+
+## ❤️ 致谢 (Credits)
+
+本项目引用了以下优秀的开源库，特此感谢：
+
+*   **[ddddocr](https://github.com/sml2h3/ddddocr)**: 强大的通用验证码识别库 (带带弟弟OCR)，实现了本项目的零人工干预自动化。
+*   **[Playwright for Python](https://github.com/microsoft/playwright-python)**: 微软开源的新一代浏览器自动化测试框架，提供了稳定高效的网页交互能力。
+*   **[PySide6 (Qt for Python)](https://doc.qt.io/qtforpython/)**: Qt 官方的 Python 绑定，赋予了本项目现代化的图形操作界面。
+*   **[Pandas](https://pandas.pydata.org/)**: 强大的数据分析和处理库，用于生成结构化的 Excel/CSV 报表。
 
 ## ⚠️ 免责声明
 
